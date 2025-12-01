@@ -14,23 +14,6 @@ Inspired by professional tools like Tripwire, it’s useful for system security 
 - Works on macOS, Linux, and Windows  
 
 ---
-Usage
-  1. Initialize baseline (first snapshot)
-  python3 main.py init /path/to/your/folder
-  Scans all files in the folder and saves their hashes in hashes.json
-  Example:
-  python3 main.py init ~/Desktop/testfolder
-
-  2. Check for changes
-  python3 main.py check /path/to/your/folder
-  Compares current files to the baseline
-  Prints the status:
-  [MODIFIED] file1.txt
-  [NEW] file2.txt
-  [DELETED] file3.txt
-  [OK] file4.txt unchanged
-
----
 
 ## Requirements
 
@@ -41,4 +24,3 @@ Install colorama:
 
 ```bash
 pip3 install colorama
-
